@@ -53,7 +53,7 @@ def books():
  
     rows = db.execute(consulta,{"q":q}).fetchall()
 
-    print(len(rows))
+    
 
     if len(rows) == 0:
         return apology("No esta :c", 404)
