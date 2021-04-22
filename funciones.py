@@ -34,7 +34,7 @@ def lookup(isbn):
     try:
         info = response["items"][0]["volumeInfo"]
     except:
-        info = {}
+        info = None
 
     return info
 
